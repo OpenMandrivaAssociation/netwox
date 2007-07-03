@@ -1,6 +1,6 @@
 %define name	netwox
-%define version	5.30.0
-%define release	%mkrel 3
+%define version	5.35.0
+%define release	%mkrel 1
 
 Summary:	A network toolbox
 Name:		%{name}
@@ -9,8 +9,8 @@ Release:	%{release}
 License:	LGPL
 Group:		Networking/Other
 URL:		http://www.laurentconstantin.com/fr/netw/netwox/
-Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tar.bz2
-Source1:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-doc_html.tar.bz2
+Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tgz
+Source1:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-doc_html.tgz
 BuildRequires:	libpcap-devel >= 0.7.2
 BuildRequires:	net2-devel
 BuildRequires:	netwib-devel = %{version}
