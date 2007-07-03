@@ -1,6 +1,6 @@
 %define name	netwox
 %define version	5.30.0
-%define release	2mdk
+%define release	%mkrel 3
 
 Summary:	A network toolbox
 Name:		%{name}
@@ -12,7 +12,7 @@ URL:		http://www.laurentconstantin.com/fr/netw/netwox/
 Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tar.bz2
 Source1:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-doc_html.tar.bz2
 BuildRequires:	libpcap-devel >= 0.7.2
-BuildRequires:	libnet1.1.2-devel
+BuildRequires:	net2-devel
 BuildRequires:	netwib-devel = %{version}
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
