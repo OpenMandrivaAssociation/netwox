@@ -14,6 +14,7 @@ Source1:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}
 BuildRequires:	libpcap-devel >= 0.7.2
 BuildRequires:	net2-devel
 BuildRequires:	netwib-devel = %{version}
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Netwox is a network tools for network administrator and hackers.
