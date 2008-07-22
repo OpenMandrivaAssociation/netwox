@@ -1,6 +1,6 @@
 %define name	netwox
 %define version	5.35.0
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Summary:	A network toolbox
 Name:		%{name}
