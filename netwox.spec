@@ -1,6 +1,6 @@
 %define name	netwox
-%define version	5.35.0
-%define release	%mkrel 6
+%define version	5.39.0
+%define release	1
 
 Summary:	A network toolbox
 Name:		%{name}
@@ -9,12 +9,11 @@ Release:	%{release}
 License:	LGPL
 Group:		Networking/Other
 URL:		http://www.laurentconstantin.com/fr/netw/netwox/
-Source0:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-src.tgz
-Source1:	http://www.laurentconstantin.com/common/netw/netwox/download/v5/%{name}-%{version}-doc_html.tgz
+Source0:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-src.tgz
+Source1:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-doc_html.tgz
 BuildRequires:	libpcap-devel >= 0.7.2
 BuildRequires:	net-devel >= 1.1.3
 BuildRequires:	netwib-devel = %{version}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Netwox is a network tools for network administrator and hackers.
@@ -38,16 +37,11 @@ cd src
 make GCCOPT="%{optflags} -D_BSD_SOURCE -D__BSD_SOURCE -D__FAVOR_BSD -DHAVE_NET_ETHERNET_H"
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 cd src
 %makeinstall_std
 
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc INSTALLUNIX.TXT INSTALLWINDOWS.TXT README.TXT
 %doc doc/*.txt %{name}-%{version}-doc_html/*
 %{_bindir}/netwox*
