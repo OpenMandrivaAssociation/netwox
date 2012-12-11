@@ -46,3 +46,35 @@ cd src
 %doc doc/*.txt %{name}-%{version}-doc_html/*
 %{_bindir}/netwox*
 %{_mandir}/man1/netwox*.1*
+
+
+%changelog
+* Mon Jul 09 2012 Alexander Khrukin <akhrukin@mandriva.org> 5.39.0-1
++ Revision: 808566
+- version update 5.39
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - the mass rebuild of 2010.0 packages
+
+* Thu Jun 04 2009 Oden Eriksson <oeriksson@mandriva.com> 5.35.0-5mdv2010.0
++ Revision: 382737
+- rebuilt against libnet 1.1.3
+
+* Wed Oct 29 2008 Oden Eriksson <oeriksson@mandriva.com> 5.35.0-4mdv2009.1
++ Revision: 298322
+- rebuilt against libpcap-1.0.0
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 5.35.0-3mdv2009.0
++ Revision: 241095
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Tue Jul 03 2007 Funda Wang <fwang@mandriva.org> 5.35.0-1mdv2008.0
++ Revision: 47458
+- New version
+- rebuild for new era
+- Import netwox
+
