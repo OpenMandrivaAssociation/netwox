@@ -1,7 +1,7 @@
 Summary:	A network toolbox
 Name:		netwox
 Version:	5.39.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Networking/Other
 URL:		http://www.laurentconstantin.com/fr/netw/netwox/
