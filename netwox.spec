@@ -4,7 +4,7 @@ Version:	5.39.0
 Release:	2
 License:	LGPL
 Group:		Networking/Other
-URL:		http://www.laurentconstantin.com/fr/netw/netwox/
+URL:		https://www.laurentconstantin.com/fr/netw/netwox/
 Source0:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-src.tgz
 Source1:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-doc_html.tgz
 BuildRequires:	libpcap-devel >= 0.7.2
