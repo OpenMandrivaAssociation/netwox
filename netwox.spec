@@ -7,6 +7,7 @@ Group:		Networking/Other
 URL:		https://www.laurentconstantin.com/fr/netw/netwox/
 Source0:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-src.tgz
 Source1:	http://downloads.sourceforge.net/project/ntwox/netwox%20only/5.39/%{name}-%{version}-doc_html.tgz
+BuildRequires:	make
 BuildRequires:	libpcap-devel >= 0.7.2
 BuildRequires:	libnet-devel >= 1.1.3
 BuildRequires:	netwib-devel = %{version}
